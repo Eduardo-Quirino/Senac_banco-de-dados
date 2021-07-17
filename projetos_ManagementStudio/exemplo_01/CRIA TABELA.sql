@@ -1,0 +1,11 @@
+USE Exemplo_01
+
+CREATE TABLE Clinete(
+codigo INT IDENTITY(1,1),
+nome VARCHAR(30) NOT NULL,
+estado VARCHAR(20) NOT NULL,
+telefone VARCHAR(12) NOT NULL
+
+CONSTRAINT PK_Clientes
+PRIMARY KEY(codigo)
+);
