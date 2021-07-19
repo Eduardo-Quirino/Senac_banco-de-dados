@@ -69,14 +69,19 @@ Exemplo2:
 > INSERT INTO Cliente 
 > VALUES ('Ozeas','São Paulo','99977-6666');
 
-- **SELECT**-faz a seleção de dados
+- ### **SELECT -** faz a seleção de dados
+  
   1. ** faz - a seleção de todos os dados da tabela*
-
+  
   2. *FROM - a  partir de* 
 
 *EXEMPLO:* 
 
 > SELECT* FROM Cliente;
+
+--------------------------------------------------------------------
+
+
 
 Exemplo2:
 
@@ -242,9 +247,17 @@ Sintaxe
   -  select *from Cliente
   - select *from Envia_Email 
 
+------
 
+**JOIN -** quando se quer buscar informações em mis de uma tabela, isso acontece em uma única tabela.
 
+**INNER JOIN -** une as tabelas
 
+Exemplo:
+
+> SELECT Cliente.Nome, Pedido.Data_pedido, Pedido.Valor_pedido FROM Cliente
+> INNER JOIN Pedido
+> ON (Cliente.Cod_Cliente = Pedido.Cliente_cod_cliente)
 
 
 
